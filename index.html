@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies Library</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="app.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    
+    <div class="header">
+        <div class="headerContent d-flex justify-content-around">
+            <div class="left">
+                <nav class="navbar navbar-expand-lg" >
+                    <button class="navbar-toggler "  type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                      <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <div class="home ">
+                                <i class="fa-solid fa-house"></i>
+                                <b>Home</b>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <div class="tv " style="color: black;">
+                                <i class="fa-solid fa-tv"></i>
+                                <b>TV</b>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <div class="playList" style="color: black;">
+                                <i class="fa-solid fa-plus"></i>
+                                <b>PlayList</b>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                        </li>
+                      </ul>
+                    </div>
+                  </nav>
+          
+            </div>
+    
+            <div class="right d-flex gap-3 mt-3">
+                <div class="row">
+                    <div class="column d-flex gap-4 justify-content-center">
+                        <form action="" class="form">
+                            <input type="search" class="search" placeholder="Search for item...">
+                        </form>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="column d-flex gap-4 justify-content-center ">
+                        <img src="assets/moon.png" class="darkMode" width="30px" height="30px" alt="">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="column d-flex gap-4 justify-content-center ">
+                        <img src="assets/sun.png" class="lightMode none" width="30px" height="30px" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+
+        <div class="moviesContainer"></div>
+        <div class="playListContainer"></div>
+        <div class="tvContainer"></div>
+        <div class="episodesContainer"></div>
+        <div class="searchResult"></div>
+        <!-- <nav aria-label="Page navigation example"> -->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

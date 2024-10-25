@@ -1,0 +1,239 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+/* background-color: #1c1124; */
+color: #fff;
+}
+.none {
+    display: none;
+}
+.header {
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    position: fixed; 
+    top: 0;
+    left: 0; 
+    right: 0; 
+    z-index: 1000; 
+}
+.home, .playList, .tv {
+    display: flex;
+    align-items: center; 
+    cursor: pointer; 
+}
+
+.home i, .playList i, .tv i {
+    margin-right: 8px; 
+}
+
+.form {
+    display: flex; 
+}
+
+.form {
+    display: flex; 
+}
+
+.search {
+    width: 300px; 
+    border: 2px solid ; 
+    border-radius: 25px;
+    outline: none; 
+    font-size: 16px; 
+    height: 30px !important;
+}
+.searchResult {
+    display: flex;
+    justify-content: center;
+}
+@media (max-width: 500px) {
+    .form {
+        max-width: 45%;
+    }
+    .search {
+        width: 100%;
+    }
+    
+}
+
+.search::placeholder {
+    color: #aaa; 
+    font-style: italic; 
+    padding: 5px;
+}
+body {
+    margin: 100px 0;
+}
+
+.moviesContainer, .actorsContainer ,.seasonsContainer ,.episodesContainer{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+    position: relative;
+    margin-top: 10px;
+}
+.playListContainer, .tvContainer{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+    
+}
+.movie, .tvShow {
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    width: 300px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+}
+
+.movie img , .tvShow img{
+    width: 100%;
+    height: 100%;
+    transition: height 0.3s ease;
+}
+.movie:hover,.tvShow:hover ,.cast:hover {
+    transform: scale(1.07);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.movie:hover .content , .tvShow:hover .content {
+    display: flex;
+}
+
+.content {
+    display: none;
+    justify-content: space-around;
+    align-items: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.8); 
+    /* background-color: #000; */
+    color: black;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 8%;
+    transition: height 0.3s ease;
+}
+.watchList {
+    width: 30px;
+    height: 30px;
+    border: 2px solid ;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+.watchList .list {
+    font-size: 20px;
+    transition: color 0.3s ease;
+}
+
+.watchList:hover {
+    background-color: #35b378;
+    border-color: #35b378;
+}
+.JSmovie  {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    width: 650px ;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-left: 40px;
+    margin-left: 30px;
+}
+.JSimg {
+    width: 100%;
+    height: 100%;
+}
+
+.cast {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    width: 250px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.cast img {
+    width: 100%;
+    height: 100%;
+}
+.topBilledCast{
+    font-size: 25px;
+    margin-top: 5%;
+    margin-bottom: 2%;
+    margin-left: 5%;
+}
+
+.detailsContainer {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+}
+@media (max-width: 1295px) {
+    .detailsContainer {
+        flex-direction: column;
+        max-width: 85%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .JSmovie {
+        max-width: 100%;
+        margin-left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .JSimg {
+        width: 100%;
+        height: 100%;
+    }
+
+    .detailsContent, .trailer {
+        max-width: 100%;
+    }
+
+}
+
+.close {
+    position: absolute;
+    top: -0.7%;
+    right: 2%;
+    font-size: 40px;
+    cursor: pointer;
+}
+@media (min-width: 700px) {
+    .navbar-nav {
+        margin-top: 15px;
+        display: flex;
+        gap: 40px;
+    }
+}
+.navbar-toggler {
+    border: none;
+}
+.navbar-toggler:focus {
+    outline: none;
+    box-shadow: none;
+}
